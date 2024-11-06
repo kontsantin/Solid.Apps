@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <script src="./assets/js/main.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Solid.Apps</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__row">
+                <div class="header__wrapper">
+                    <a class="header__logo" href="#">
+                        <img class="header__logo-image" src="./assets/img/logo.svg" alt="logo">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__menu">
+                            <li class="header__menu-item"><a href="#" class="header__link">Кейсы</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__link">О нас</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__link">Контакты</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__link">Блог</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__actions">
+                    <div class="header__social">
+
+                    </div>
+                    <button class="header__button">Обсудить проект</button>
+                </div>
+                <div class="header__burger">
+                    <span class="header__burger-line header__burger-line--top"></span>
+                    <span class="header__burger-line header__burger-line--middle"></span>
+                    <span class="header__burger-line header__burger-line--bottom"></span>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main class="main">
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero__row">
+                    <div class="hero__column">
+                        <h1 class="hero__title">Разработка <span>Telegram Mini Apps</span> под ключ</h1>
+                        <p class="hero__subtitle">Поможем реализовать идею вашего продукта и запустить на аудиторию
+                            более чем 900 млн пользователей</p>
+                        <button class="btn hero__btn">Обсудить проект</button>
+                    </div>
+                    <div class="hero__column">
+                        <div class="hero__stats">
+                            <p class="hero__stats-item">900<span>млн</span> </p>
+                            <p class="hero__stats-desc">Пользователей в Telegram</p>
+                        </div>
+                        <div class="hero__stats">
+                            <p class="hero__stats-item">x3</p>
+                            <p class="hero__stats-desc">Быстрее скорость разработки чем приложение</p>
+                        </div>
+                        <div class="hero__advantages">
+                            <div class="hero__advantages-desc">
+                                <img class="hero__advantages-desc-icon" src="./assets/img/CloudCheck.svg" alt="">
+                                <p class="hero__advantages-desc-text">Синхронизация с любыми внешними сервисами</p>
+                            </div>
+                            <div class="hero__advantages-desc">
+                                <img class="hero__advantages-desc-icon" src="./assets/img/DesktopTower.svg" alt="">
+                                <p class="hero__advantages-desc-text">Кроссплатформенность</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Картинка фоном между колонками -->
+                    <img class="hero__background-image" src="./assets/img/iPhone Mockup.png" alt="Background Image">
+                </div>
+            </div>
+        </section>
+
+        <section class="telegram-app">
+            <div class="container">
+                <div class="telegram-app__row">
+                    <div class="telegram-app__column">
+                        <h2 class="telegram-app__title">Полноценное <br>приложение<br> <span>внутри Telegram</span></h2>
+                    </div>
+                    <div class="telegram-app__column">
+                        <p class="telegram-app__subtitle">Эти мини-приложения предоставляют уникальные возможности для
+                            персонализации и улучшения взаимодействия с пользователем.</p>
+                        <button class="btn telegram-app__btn">Смотреть кейсы</button>
+                    </div>
+                </div>
+                <div class="telegram-app__advantage-list">
+
+                    <div class="telegram-app__advantages-item">
+                        <img class="telegram-app__advantages-item-icon" src="./assets/img/CloudCheck.svg" alt="">
+                        <p class="telegram-app__advantages-item-text">Быстрый запуск</p>
+                    </div>
+                    <div class="telegram-app__advantages-item">
+                        <img class="telegram-app__advantages-item-icon" src="./assets/img/DesktopTower.svg" alt="">
+                        <p class="telegram-app__advantages-item-text">Персонализированные push-уведомления</p>
+                    </div>
+                    <div class="telegram-app__advantages-item">
+                        <img class="telegram-app__advantages-item-icon" src="./assets/img/DesktopTower.svg" alt="">
+                        <p class="telegram-app__advantages-item-text">Поддержка криптовалютных
+                            и стандартных платежей</p>
+                    </div>
+                    <div class="telegram-app__advantages-item">
+                        <img class="telegram-app__advantages-item-icon" src="./assets/img/DesktopTower.svg" alt="">
+                        <p class="telegram-app__advantages-item-text">Кроссплатформенность</p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <h2 class="advantages__title">Преимущества разработки <br> <span>Telegram Mini Apps</span></h2>
+
+
+
+                <div class="advantages__list">
+                    <div class="advantages__item">
+                        <img class="advantages__item-icon" src="./assets/img/CloudCheck.svg" alt="">
+                        <div class="advanteges__item-box">
+                            <h4 class="advantages__item-title">Не требует установки</h4>
+                            <p class="advantages__item-desc">работает внутри Telegram</p>
+                        </div>
+
+                    </div>
+                    <div class="advantages__item">
+                        <img class="advantages__item-icon" src="./assets/img/CloudCheck.svg" alt="">
+                        <div class="advanteges__item-box">
+                            <h4 class="advantages__item-title">Быстрая разработка</h4>
+                            <p class="advantages__item-desc">Срок разработки ~3-4 недели</p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <img class="advantages__item-icon" src="./assets/img/CloudCheck.svg" alt="">
+                        <div class="advanteges__item-box">
+                            <h4 class="advantages__item-title">Кроссплатворменность</h4>
+                            <p class="advantages__item-desc">поддерживается всеми устройствами</p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <img class="advantages__item-icon" src="./assets/img/CloudCheck.svg" alt="">
+                        <div class="advanteges__item-box">
+                            <h4 class="advantages__item-title">Гибкость</h4>
+                            <p class="advantages__item-desc">Взаимодействие
+                                со всеми внешними сервисами</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="applications">
+            <div class="container">
+                <h2 class="applications__title">Сферы применения</h2>
+                <div class="applications__list">
+                    <div class="applications__item" style="background-color: #F0F4F8;">
+                        <img class="applications__item-icon" style="background-color: #40434E;"
+                            src="./assets/img/GameController.svg" alt="Иконка 1">
+                        <h3 class="applications__item-title" style="color: #40434E;">Игры</h3>
+                        <img class="applications__item-image" src="./assets/img/Rectangle37.png" alt="Изображение 1">
+                    </div>
+                    <div class="applications__item" style="background-color: #40434E;">
+                        <img class="applications__item-icon" style="background-color: #0D83EF;"
+                            src="./assets/img/ShoppingCart.svg" alt="Иконка 2">
+                        <h3 class="applications__item-title" style="color: #FFFFFF;">Интернет-магазины</h3>
+                        <img class="applications__item-image" src="./assets/img/3-removebg.png" alt="Изображение 2">
+                    </div>
+                    <div class="applications__item" style="background-color: #F0F4F8;">
+                        <img class="applications__item-icon" style="background-color: #40434E;"
+                            src="./assets/img/Briefcase.svg" alt="Иконка 3">
+                        <h3 class="applications__item-title" style="color: #40434E;">Корпоративные инструменты</h3>
+                        <img class="applications__item-image" src="./assets/img/graph.png" alt="Изображение 3">
+                    </div>
+                    <div class="applications__item" style="background-color: #0D83EF;">
+                        <img class="applications__item-icon" style="background-color: #40434E;"
+                            src="./assets/img/Smiley.svg" alt="Иконка 4">
+                        <h3 class="applications__item-title" style="color: #FFFFFF;">Системы лояльности и клубы
+                            покупателей</h3>
+                        <img class="applications__item-image" src="./assets/img/gamepad-3d-illustration.png"
+                            alt="Изображение 4">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ideas">
+            <div class="ideas__backgound">
+                <div class="container">
+                    <div class="ideas__wrap">
+                        <div class="ideas__content">
+                            <h2 class="ideas__title">Расскажите <br>о своих идеях</h2>
+                            <p class="ideas__subtitle">Постараемся помочь и превратить их в<br> приложение в Telegram
+                                так,
+                                как
+                                вы задумали</p>
+                            <div class="ideas__actions">
+                                <button class="btn ideas__btn">Обсудить проект</button>
+                                <a class="btn ideas__link" href="https://t.me/ваш_телеграмм_аккаунт" target="_blank"
+                                    class="ideas__telegram-link">Написать в Telegram</a>
+                            </div>
+                        </div>
+                        <img class="ideas__img" src="./assets/img/Light Bulb.K01.2k 1.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+        </section>
+        <section class="works">
+            <div class="container">
+                <h2 class="works__title">Наши работы</h2>
+                <div class="works__list">
+                    <div class="works__item" style="background-color: #40434E;">
+                        <div class="works__item-content">
+                            <img class="works__icon" src="./assets/img/sver_6 3.svg" alt="Иконка">
+                            <p class="works__description">Краткое описание проекта, рассказывающее о сути и результатах
+                                работы.</p>
+                            <a class="button works__btn" href="#">Смотерть кейс</a>
+                        </div>
+
+
+                        <img class="works__image" src="./assets/img/PSD_03-1 1.png" alt="Изображение проекта">
+                    </div>
+
+                    <div class="works__item" style="background-color: #40434E;">
+                        <div class="works__item-content">
+                            <img class="works__icon" src="./assets/img/sver_6 2.svg" alt="Иконка">
+                            <p class="works__description">Краткое описание проекта, рассказывающее о сути и результатах
+                                работы.</p>
+                            <a class="button works__btn" href="#">Смотерть кейс</a>
+                        </div>
+                        <img class="works__image" src="./assets/img/PSD_03-1 2@2x.png" alt="Изображение проекта">
+                    </div>
+                    <div class="works__item" style="background-color: #40434E;">
+                        <div class="works__item-content">
+                            <img class="works__icon" src="./assets/img/sver_6 1.svg" alt="Иконка">
+                            <p class="works__description">Краткое описание проекта, рассказывающее о сути и результатах
+                                работы.</p>
+                            <a class="button works__btn" href="#">Смотерть кейс</a>
+                        </div>
+                        <img class="works__image" src="./assets/img/PSD_03-1 3.png" alt="Изображение проекта">
+                    </div>
+                    <div class="works__item" style="background-color: #40434E;">
+                        <div class="works__item-content">
+                            <img class="works__icon" src="./assets/img/sver_6 3.svg" alt="Иконка">
+                            <p class="works__description">Краткое описание проекта, рассказывающее о сути и результатах
+                                работы.</p>
+                            <a class="button works__btn" href="#">Смотерть кейс</a>
+                        </div>
+                        <img class="works__image" src="./assets/img/PSD_03-1 4.png" alt="Изображение проекта">
+                    </div>
+                </div>
+                <div class="works__actions">
+                    <button class="button works__actions-btn">Показать ещё</button>
+                    <a href="" class="btn works__actions-link">Смотреть все кейсы</a>
+                </div>
+            </div>
+        </section>
+        <section class="stages">
+            <div class="container">
+                <h2 class="stages__title">Этапы разработки</h2>
+                <div class="stages__list">
+                    <div class="stages__item">
+                        <div class="stages__icon">
+                            <img src="./assets/img/MagnifyingGlass.svg" alt="Иконка этапа 1">
+                        </div>
+                        <h3 class="stages__step">Этап 1</h3>
+                        <p class="stages__description">Анализ требований
+                            и проработка коцепции</p>
+                    </div>
+                    <div class="stages__item">
+                        <div class="stages__icon">
+                            <img src="./assets/img/PaintBrushBroad.svg" alt="Иконка этапа 2">
+                        </div>
+                        <h3 class="stages__step">Этап 2</h3>
+                        <p class="stages__description">Дизайн
+                            и прототипирование</p>
+                    </div>
+                    <div class="stages__item">
+                        <div class="stages__icon">
+                            <img src="./assets/img/Bug.svg" alt="Иконка этапа 3">
+                        </div>
+                        <h3 class="stages__step">Этап 3</h3>
+                        <p class="stages__description">Разработка
+                            и тестирование</p>
+                    </div>
+                    <div class="stages__item">
+                        <div class="stages__icon">
+                            <img src="./assets/img/RocketLaunch.svg" alt="Иконка этапа 4">
+                        </div>
+                        <h3 class="stages__step">Этап 4</h3>
+                        <p class="stages__description">Запуск и поддержка</p>
+                    </div>
+                </div>
+                <button class="btn stages__btn">Обсудить кейсы</button>
+            </div>
+        </section>
+        <section class="contact-us">
+            <div class="contact-us__background">
+                <div class="container">
+                    <div class="contact-us__content">
+                        <h2 class="contact-us__title">
+                            Свяжитесь с нами
+                        </h2>
+                        <div class="contact-us__desc">
+                            Опишите нам вашу идею, а мы поможем<br> вам в ее реализации
+                        </div>
+                        <div class="contact-us__actions">
+                            <button class="btn contact-us__btn">Обсудить проект</button>
+                            <a href="#" class="button contact-us__link">Написать в телеграм</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="why-us">
+            <div class="container">
+                <h2 class="why-us__title">Почему мы?</h2>
+                <div class="why-us__list">
+                    <div class="why-us__item">
+                        <div class="why-us__icon"><img src="./assets/img/why-us-1.png" alt="Надежность и качество">
+                        </div>
+                        <div class="why-us__item-content">
+                            <h3 class="why-us__subtitle">Надежность и качество</h3>
+                            <p class="why-us__description">Ориентация на результат. Тестируем каждую новую разработанную
+                                и защищаем продукт от атак.</p>
+                        </div>
+                    </div>
+                    <div class="why-us__item">
+                        <div class="why-us__icon"><img src="./assets/img/why-us-2.png" alt="Метрики успеха"></div>
+                        <div class="why-us__item-content">
+                            <h3 class="why-us__subtitle">Метрики успеха</h3>
+                            <p class="why-us__description">При разработке думаем про ключевые метрики: Retention, DAU,
+                                MAU и ARPPU.</p>
+                        </div>
+                    </div>
+                    <div class="why-us__item">
+
+                        <div class="why-us__icon"><img src="./assets/img/why-us-3.png" alt="Экспертиза"></div>
+                        <div class="why-us__item-content">
+                            <h3 class="why-us__subtitle">Экспертиза</h3>
+                            <p class="why-us__description">Мы пристально следим за развитием технологии mini apps,
+                                применяем лучшие практики и делимся этим в нашем Telegram-канале.</p>
+                        </div>
+                    </div>
+                    <div class="why-us__item">
+
+                        <div class="why-us__icon"><img src="./assets/img/why-us-4.png" alt="Профессионализм"></div>
+                        <div class="why-us__item-content">
+                            <h3 class="why-us__subtitle">Профессионализм</h3>
+                            <p class="why-us__description">Объединяем в нашей команде специалистов с опытом создания
+                                Mini App.</p>
+                        </div>
+
+                    </div>
+                    <div class="why-us__item why-us__item--large">
+                        <div class="why-us__icon"><img src="./assets/img/why-us-5.png" alt="Прозрачность и гибкость">
+                        </div>
+                        <div class="why-us__item-content">
+                            <h3 class="why-us__subtitle">Прозрачность и гибкость</h3>
+                            <p class="why-us__description">Благодаря выстроенной системе отчетов и итеративному подходу
+                                вы всегда в курсе, что происходит с вашим проектом.</p>
+                            <a href="https://t.me/your_telegram_channel" class="button why-us__link"
+                                target="_blank">Перейти в
+                                наш Телеграм</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients">
+            <div class="container">
+                <h2 class="clients__title">Наши клиенты</h2>
+                <div class="swiper-container clients__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide clients__slide"><img src="./assets/img/sber.png" alt="Клиент 1"></div>
+                        <div class="swiper-slide clients__slide"><img src="./assets/img/tinkoff.png" alt="Клиент 2">
+                        </div>
+                        <div class="swiper-slide clients__slide"><img src="./assets/img/vtb.png" alt="Клиент 3"></div>
+                        <div class="swiper-slide clients__slide"><img src="./assets/img/alfabank.png" alt="Клиент 4">
+                        </div>
+                        <div class="swiper-slide clients__slide"><img src="./assets/img/sber.png" alt="Клиент 1"></div>
+                        <div class="swiper-slide clients__slide"><img src="./assets/img/tinkoff.png" alt="Клиент 2">
+                        </div>
+                        <div class="swiper-slide clients__slide"><img src="./assets/img/vtb.png" alt="Клиент 3"></div>
+                        <div class="swiper-slide clients__slide"><img src="./assets/img/alfabank.png" alt="Клиент 4">
+                        </div>
+                        <!-- Добавьте остальные логотипы -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonials__row">
+                    <div class="testimonials__action">
+                        <h2 class="testimonials__title">Отзывы клиентов</h2>
+
+                        <div class="testimonials__slider">
+                            <div class="testimonials__avatars">
+                                <div class="testimonials__avatar active" data-review="1"><img
+                                        src="./assets/img/Ellipse 5-2.jpg" alt="Client 1">
+                                </div>
+                                <div class="testimonials__avatar" data-review="2"><img
+                                        src="./assets/img/Ellipse 5-1.jpg" alt="Client 2">
+                                </div>
+                                <div class="testimonials__avatar" data-review="3"><img
+                                        src="./assets/img/Ellipse 5-3.jpg" alt="Client 3">
+                                </div>
+                                <div class="testimonials__avatar" data-review="4"><img
+                                        src="./assets/img/Ellipse 5-4.jpg" alt="Client 4">
+                                </div>
+                                <div class="testimonials__avatar" data-review="5"><img
+                                        src="./assets/img/Ellipse 5-5.jpg" alt="Client 5">
+
+                                </div>
+                                <div class="testimonials__avatar" data-review="6"><img src="./assets/img/Ellipse 5.jpg"
+                                        alt="Client 6">
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="testimonials__slider-actions">
+                                <button class="testimonials__arrow testimonials__arrow--left"></button>
+                                <button class="testimonials__arrow testimonials__arrow--right"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__content">
+                        <!-- Отзыв 1 -->
+                        <div class="testimonials__review active" data-review="1">
+                            <p class="testimonials__review-text">
+                                Размещаем новое приложение в Telegram и предоставляем вашему персоналу детальные
+                                инструкции для успешной работы с Mini App...
+                            </p>
+                            <div class="testimonials__author">
+                                <p class="testimonials__author-name">Иван Иванов</p>
+                                <p class="testimonials__author-role">Директор компании</p>
+                            </div>
+                        </div>
+
+                        <!-- Отзыв 2 -->
+                        <div class="testimonials__review" data-review="2">
+                            <p class="testimonials__review-text">
+                                «Мы доверяем этому разработчику за его профессионализм и внимание к деталям. Все этапы
+                                проекта были четко согласованы, а результаты превзошли наши ожидания. Приложение
+                                работает бесперебойно, а поддержка всегда на высоте.»
+                            </p>
+                            <div class="testimonials__author">
+                                <p class="testimonials__author-name">Мария Петрова</p>
+                                <p class="testimonials__author-role">Менеджер проектов</p>
+                            </div>
+                        </div>
+
+                        <!-- Отзыв 3 -->
+                        <div class="testimonials__review" data-review="3">
+                            <p class="testimonials__review-text">
+                                «Работаем с передовыми технологиями, обеспечивая актуальность и эффективность на всех
+                                стадиях разработки. Вся команда вовлечена в процесс, и каждый шаг разрабатывается с
+                                учетом потребностей бизнеса. Результат — отличный продукт, готовый к масштабированию.»
+                            </p>
+                            <div class="testimonials__author">
+                                <p class="testimonials__author-name">Алексей Сидоров</p>
+                                <p class="testimonials__author-role">Разработчик</p>
+                            </div>
+                        </div>
+
+                        <!-- Отзыв 4 -->
+                        <div class="testimonials__review" data-review="4">
+                            <p class="testimonials__review-text">
+                                «Создаем интуитивно понятный интерфейс, который привлекает пользователей и делает работу
+                                с приложением максимально комфортной. В нашей работе важен каждый элемент, и мы уделяем
+                                внимание даже самым маленьким деталям для создания идеального дизайна.»
+                            </p>
+                            <div class="testimonials__author">
+                                <p class="testimonials__author-name">Елена Васильева</p>
+                                <p class="testimonials__author-role">Дизайнер</p>
+                            </div>
+                        </div>
+
+                        <!-- Отзыв 5 -->
+                        <div class="testimonials__review" data-review="5">
+                            <p class="testimonials__review-text">
+                                «Вы всегда в курсе процесса разработки вашего проекта благодаря детализированным
+                                отчетам. Тестирование было проведено на всех этапах, и приложение прошло все проверки
+                                без сбоев. Я уверена в его стабильности и безопасности.»
+                            </p>
+                            <div class="testimonials__author">
+                                <p class="testimonials__author-name">Ольга Кузнецова</p>
+                                <p class="testimonials__author-role">Тестировщик</p>
+                            </div>
+                        </div>
+
+                        <!-- Отзыв 6 -->
+                        <div class="testimonials__review" data-review="6">
+                            <p class="testimonials__review-text">
+                                «Разрабатываем прототипы, которые позволяют визуализировать будущее приложение и его
+                                основные функции на ранних стадиях разработки. Это помогает не только ускорить процесс,
+                                но и избежать ошибок, которые могут возникнуть позже. Отличная работа команды!»
+                            </p>
+                            <div class="testimonials__author">
+                                <p class="testimonials__author-name">Ольга Кузнецова</p>
+                                <p class="testimonials__author-role">Тестировщик</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="company-processes">
+            <div class="container">
+                <h2 class="company-processes__title">Познакомимся поближе</h2>
+                <p class="company-processes__description">Узнать подробности процессов внутри нашей компании помогут
+                    наши статьи на vc.ru</p>
+
+                <div class="company-processes__cards">
+                    <!-- Карточка 1 -->
+                    <div class="company-processes__card">
+                        <div class="company-processes__card-image-wrapper">
+                            <img src="./assets/img/Rectangle 26.jpg" alt="Как выстроить эффективную команду"
+                                class="company-processes__card-image">
+                            <div class="company-processes__card-tags">
+                                <p class="hashtag">Команда</p>
+                                <p class="hashtag">Эффективность</p>
+                            </div>
+                        </div>
+                        <div class="company-processes__card-content">
+                            <h3 class="company-processes__card-title">Как выстроить эффективную команду</h3>
+                            <p class="company-processes__card-description">В этой статье мы делимся опытом формирования
+                                команды, где каждый член понимает свою роль и вносит значительный вклад в общий
+                                результат.</p>
+                        </div>
+                        <a href="https://vc.ru" class="company-processes__card-link">Читать на vc.ru</a>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="company-processes__card">
+                        <div class="company-processes__card-image-wrapper">
+                            <img src="./assets/img/Rectangle 27.jpg" alt="Что важно при разработке продуктов"
+                                class="company-processes__card-image">
+                            <div class="company-processes__card-tags">
+                                <p class="hashtag">Продукты</p>
+                                <p class="hashtag">Разработка</p>
+                            </div>
+                        </div>
+                        <div class="company-processes__card-content">
+                            <h3 class="company-processes__card-title">Что важно при разработке продуктов</h3>
+                            <p class="company-processes__card-description">Какие процессы необходимы для создания
+                                успешного продукта, и как избежать распространенных ошибок в ходе разработки?</p>
+                        </div>
+                        <a href="https://vc.ru" class="company-processes__card-link">Читать на vc.ru</a>
+                    </div>
+
+                    <!-- Карточка 3 -->
+                    <div class="company-processes__card">
+                        <div class="company-processes__card-image-wrapper">
+                            <img src="./assets/img/Rectangle 28.jpg" alt="Модели бизнес-процессов для стартапов"
+                                class="company-processes__card-image">
+                            <div class="company-processes__card-tags">
+                                <p class="hashtag">Бизнес</p>
+                                <p class="hashtag">Стартапы</p>
+                            </div>
+                        </div>
+                        <div class="company-processes__card-content">
+                            <h3 class="company-processes__card-title">Модели бизнес-процессов для стартапов</h3>
+                            <p class="company-processes__card-description">Рассматриваем эффективные модели
+                                бизнес-процессов для стартапов, которые помогут ускорить выход на рынок и избежать
+                                распространенных проблем.</p>
+                        </div>
+                        <a href="https://vc.ru" class="company-processes__card-link">Читать на vc.ru</a>
+                    </div>
+
+                    <!-- Карточка 4 -->
+                    <div class="company-processes__card">
+                        <div class="company-processes__card-image-wrapper">
+                            <img src="./assets/img/Rectangle 29.jpg" alt="Как масштабировать стартап"
+                                class="company-processes__card-image">
+                            <div class="company-processes__card-tags">
+                                <p class="hashtag">Масштабирование</p>
+                                <p class="hashtag">Стартапы</p>
+                            </div>
+                        </div>
+                        <div class="company-processes__card-content">
+                            <h3 class="company-processes__card-title">Как масштабировать стартап</h3>
+                            <p class="company-processes__card-description">Статья о том, какие шаги необходимо
+                                предпринять для успешного масштабирования стартапа и привлечения инвестиций на новых
+                                этапах развития.</p>
+                        </div>
+                        <a href="https://vc.ru" class="company-processes__card-link">Читать на vc.ru</a>
+                    </div>
+
+                    <!-- Карточка 5 -->
+                    <div class="company-processes__card">
+                        <div class="company-processes__card-image-wrapper">
+                            <img src="./assets/img/Rectangle 30.jpg" alt="Оптимизация внутренних процессов компании"
+                                class="company-processes__card-image">
+                            <div class="company-processes__card-tags">
+                                <p class="hashtag">Оптимизация</p>
+                                <p class="hashtag">Процессы</p>
+                            </div>
+                        </div>
+                        <div class="company-processes__card-content">
+                            <h3 class="company-processes__card-title">Оптимизация внутренних процессов компании</h3>
+                            <p class="company-processes__card-description">Подробный гид по улучшению внутренних
+                                бизнес-процессов с целью повышения производительности и снижения издержек.</p>
+                        </div>
+                        <a href="https://vc.ru" class="company-processes__card-link">Читать на vc.ru</a>
+                    </div>
+
+                    <!-- Карточка 6 -->
+                    <div class="company-processes__card">
+                        <div class="company-processes__card-image-wrapper">
+                            <img src="./assets/img/Rectangle 31.jpg"
+                                alt="Как обеспечить качественную поддержку клиентов"
+                                class="company-processes__card-image">
+                            <div class="company-processes__card-tags">
+                                <p class="hashtag">Поддержка</p>
+                                <p class="hashtag">Клиенты</p>
+                            </div>
+                        </div>
+                        <div class="company-processes__card-content">
+                            <h3 class="company-processes__card-title">Как обеспечить качественную поддержку клиентов
+                            </h3>
+                            <p class="company-processes__card-description">Статья о том, как организовать эффективную
+                                службу поддержки, чтобы удовлетворить потребности клиентов и повысить их лояльность.</p>
+                        </div>
+                        <a href="https://vc.ru" class="company-processes__card-link">Читать на vc.ru</a>
+                    </div>
+                </div>
+
+
+
+                <div class="company-processes__button-container">
+                    <a href="https://vc.ru" class="button company-processes__button">Пперейти в блог</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2 class="faq__title">Часто задаваемые вопросы</h2>
+
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3 class="faq__question-title">Как я могу зарегистрироваться на сайте?</h3>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Для регистрации на сайте перейдите в раздел "Регистрация", заполните необходимые поля и
+                            подтвердите регистрацию.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3 class="faq__question-title">Какие способы оплаты доступны?</h3>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Мы поддерживаем оплату банковскими картами, электронными кошельками и банковским переводом.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3 class="faq__question-title">Как я могу изменить свои персональные данные?</h3>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Вы можете изменить свои данные в разделе "Профиль" после авторизации на сайте.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-form">
+            <div class="container">
+                <div class="contact-form__flex">
+                    <div class="contact-form-wrap">
+                        <h2 class="contact-form__title">Остались вопросы?</h2>
+
+                        <form class="contact-form__form" id="feedbackForm">
+                            <div class="contact-form__field">
+                                <label for="name">Ваше имя *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="contact-form__field">
+                                <label for="contact">Телеграм или почта *</label>
+                                <input type="text" id="contact" name="contact" required>
+                            </div>
+                            <div class="contact-form__field">
+                                <label for="idea">Расскажите свою идею *</label>
+                                <div class="contact-form__char-counter">
+                                    <span id="charCount">0</span>/300
+                                </div>
+                                <textarea id="idea" name="idea" maxlength="300" required></textarea>
+
+                            </div>
+                            <div class="contact-form__field contact-form__field--action">
+
+                                <input type="file" id="file" name="file" accept=".pdf, .png, .jpg, .jpeg, .mp4, .docx"
+                                    class="contact-form__input-file">
+                                <button type="button" class="contact-form__file-button"
+                                    onclick="document.getElementById('file').click()">Прикрепить файл</button>
+                                <label for="file" class="contact-form__label">(PDF, PNG, JPG, MP4, DOCX до 50
+                                    МБ)</label>
+                                <div id="fileError" class="contact-form__file-error"></div>
+                            </div>
+                            <button type="submit" class="contact-form__submit btn">Оставить заявку</button>
+                        </form>
+
+
+                    </div> <img class="contact-form__image"
+                        src="./assets/img/9-99890_paper-plane-png-clip-art-imageu200b-gallery-yopriceville 1.svg"
+                        alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__top">
+                <div class="footer__row">
+  <a href="#">
+                <img class="footer__logo" src="./assets/img/logo.svg" alt="Logo">
+            </a>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Главная</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">О нас</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Кейсы</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Блог</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__actions">
+                    <a href="#" class="button footer__actions-link">Наш канал про Mini Apps</a>
+                    <button class="btn footer__actions-btn">Обсудить проект</button>
+                </div>
+                </div>
+              
+                 <div class="footer__author-name">
+                ИП Аветисян Артур Рубенович <br>ИНН 590308726244
+            </div>     
+            </div>
+                
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__container container">
+                <div class="footer__info">
+                    <p class="footer__text">&copy; 2024 Solid.Apps. Все права защищены.</p>
+                    <a class="footer__link-page" href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
