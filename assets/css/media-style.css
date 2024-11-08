@@ -1,0 +1,42 @@
+@media screen and ( max-width: 768px ) {
+     .header__nav {
+        transform: translateX(-100%);
+    }
+    .header__actions {
+        display: none;
+    }
+    .header__burger {
+        display: block;
+    }
+    .header__container {
+        margin: 20px auto;
+    }
+    /* Базовые стили для меню и навигации */
+    .header__nav {
+        justify-content: flex-end;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #FBFBFB;
+        height: 100vh;
+        width: 330px; /* ширина выдвигаемого меню */
+        transform: translateX(100%); /* Начальное скрытие за правым краем */
+        transition: transform 1.3s ease; /* Плавное выдвижение */
+    }
+    
+    .header__nav.active {
+        transform: translateX(0); /* Полное выдвижение меню */
+        
+    }
+    
+    .header__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        list-style: none;
+        padding: 20px;
+        margin: 0;
+    }
+    
+
+} 

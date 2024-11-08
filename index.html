@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media-style.css">
     <script src="./assets/js/main.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Solid.Apps</title>
 </head>
-
+<div class="overlay"></div>
 <body>
     <header class="header">
         <div class="header__container">
@@ -45,7 +46,7 @@
         </div>
 
     </header>
-    <main class="main">
+    <!-- <main class="main">
 
         <section class="hero">
             <div class="container">
@@ -76,7 +77,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Картинка фоном между колонками -->
                     <img class="hero__background-image" src="./assets/img/iPhone Mockup.png" alt="Background Image">
                 </div>
             </div>
@@ -114,9 +114,7 @@
                         <p class="telegram-app__advantages-item-text">Кроссплатформенность</p>
                     </div>
                 </div>
-            </div>
-
-            </div>
+            </div>            
         </section>
         <section class="advantages">
             <div class="container">
@@ -209,11 +207,8 @@
                         </div>
                         <img class="ideas__img" src="./assets/img/Light Bulb.K01.2k 1.png" alt="">
                     </div>
-
                 </div>
-
-            </div>
-            </div>
+            </div>        
         </section>
         <section class="works">
             <div class="container">
@@ -395,7 +390,7 @@
                         <div class="swiper-slide clients__slide"><img src="./assets/img/vtb.png" alt="Клиент 3"></div>
                         <div class="swiper-slide clients__slide"><img src="./assets/img/alfabank.png" alt="Клиент 4">
                         </div>
-                        <!-- Добавьте остальные логотипы -->
+                       
                     </div>
                 </div>
             </div>
@@ -439,7 +434,7 @@
                         </div>
                     </div>
                     <div class="testimonials__content">
-                        <!-- Отзыв 1 -->
+                     
                         <div class="testimonials__review active" data-review="1">
                             <p class="testimonials__review-text">
                                 Размещаем новое приложение в Telegram и предоставляем вашему персоналу детальные
@@ -451,7 +446,6 @@
                             </div>
                         </div>
 
-                        <!-- Отзыв 2 -->
                         <div class="testimonials__review" data-review="2">
                             <p class="testimonials__review-text">
                                 «Мы доверяем этому разработчику за его профессионализм и внимание к деталям. Все этапы
@@ -464,7 +458,7 @@
                             </div>
                         </div>
 
-                        <!-- Отзыв 3 -->
+                  
                         <div class="testimonials__review" data-review="3">
                             <p class="testimonials__review-text">
                                 «Работаем с передовыми технологиями, обеспечивая актуальность и эффективность на всех
@@ -477,7 +471,7 @@
                             </div>
                         </div>
 
-                        <!-- Отзыв 4 -->
+                     
                         <div class="testimonials__review" data-review="4">
                             <p class="testimonials__review-text">
                                 «Создаем интуитивно понятный интерфейс, который привлекает пользователей и делает работу
@@ -490,7 +484,7 @@
                             </div>
                         </div>
 
-                        <!-- Отзыв 5 -->
+                        
                         <div class="testimonials__review" data-review="5">
                             <p class="testimonials__review-text">
                                 «Вы всегда в курсе процесса разработки вашего проекта благодаря детализированным
@@ -503,7 +497,7 @@
                             </div>
                         </div>
 
-                        <!-- Отзыв 6 -->
+                       
                         <div class="testimonials__review" data-review="6">
                             <p class="testimonials__review-text">
                                 «Разрабатываем прототипы, которые позволяют визуализировать будущее приложение и его
@@ -529,7 +523,7 @@
                     наши статьи на vc.ru</p>
 
                 <div class="company-processes__cards">
-                    <!-- Карточка 1 -->
+                  
                     <div class="company-processes__card">
                         <div class="company-processes__card-image-wrapper">
                             <img src="./assets/img/Rectangle 26.jpg" alt="Как выстроить эффективную команду"
@@ -548,7 +542,7 @@
                         <a href="https://vc.ru" class="company-processes__card-link">Читать на vc.ru</a>
                     </div>
 
-                    <!-- Карточка 2 -->
+                  
                     <div class="company-processes__card">
                         <div class="company-processes__card-image-wrapper">
                             <img src="./assets/img/Rectangle 27.jpg" alt="Что важно при разработке продуктов"
@@ -566,7 +560,7 @@
                         <a href="https://vc.ru" class="company-processes__card-link">Читать на vc.ru</a>
                     </div>
 
-                    <!-- Карточка 3 -->
+                  
                     <div class="company-processes__card">
                         <div class="company-processes__card-image-wrapper">
                             <img src="./assets/img/Rectangle 28.jpg" alt="Модели бизнес-процессов для стартапов"
@@ -585,7 +579,7 @@
                         <a href="https://vc.ru" class="company-processes__card-link">Читать на vc.ru</a>
                     </div>
 
-                    <!-- Карточка 4 -->
+                  
                     <div class="company-processes__card">
                         <div class="company-processes__card-image-wrapper">
                             <img src="./assets/img/Rectangle 29.jpg" alt="Как масштабировать стартап"
@@ -604,7 +598,7 @@
                         <a href="https://vc.ru" class="company-processes__card-link">Читать на vc.ru</a>
                     </div>
 
-                    <!-- Карточка 5 -->
+                   
                     <div class="company-processes__card">
                         <div class="company-processes__card-image-wrapper">
                             <img src="./assets/img/Rectangle 30.jpg" alt="Оптимизация внутренних процессов компании"
@@ -622,7 +616,6 @@
                         <a href="https://vc.ru" class="company-processes__card-link">Читать на vc.ru</a>
                     </div>
 
-                    <!-- Карточка 6 -->
                     <div class="company-processes__card">
                         <div class="company-processes__card-image-wrapper">
                             <img src="./assets/img/Rectangle 31.jpg"
@@ -729,44 +722,44 @@
             </div>
         </section>
     </main>
-    <!-- Footer -->
+
     <footer class="footer">
         <div class="footer__container container">
             <div class="footer__top">
                 <div class="footer__row">
-  <a href="#">
-                <img class="footer__logo" src="./assets/img/logo.svg" alt="Logo">
-            </a>
-                <nav class="footer__nav">
-                    <ul class="footer__nav-list">
-                        <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">Главная</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">О нас</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">Кейсы</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">Блог</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="footer__actions">
-                    <a href="#" class="button footer__actions-link">Наш канал про Mini Apps</a>
-                    <button class="btn footer__actions-btn">Обсудить проект</button>
+                    <a href="#">
+                        <img class="footer__logo" src="./assets/img/logo.svg" alt="Logo">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Главная</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">О нас</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Кейсы</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Блог</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__actions">
+                        <a href="#" class="button footer__actions-link">Наш канал про Mini Apps</a>
+                        <button class="btn footer__actions-btn">Обсудить проект</button>
+                    </div>
                 </div>
+
+                <div class="footer__author-name">
+                    ИП Аветисян Артур Рубенович <br>ИНН 590308726244
                 </div>
-              
-                 <div class="footer__author-name">
-                ИП Аветисян Артур Рубенович <br>ИНН 590308726244
-            </div>     
             </div>
-                
+
         </div>
         <div class="footer__bottom">
             <div class="footer__container container">
@@ -776,7 +769,8 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
+
 </body>
 
 </html>
