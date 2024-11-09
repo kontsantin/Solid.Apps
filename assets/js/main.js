@@ -9,14 +9,33 @@ document.addEventListener("DOMContentLoaded", function () {
       let overLayActive = document.querySelector(".overlay");
 
       if (headerMenuOpen) {
+        // Активация меню
         headerNavActive.classList.toggle("active");
         headerMenuOpen.classList.toggle("active");
         overLayActive.classList.toggle("active");
         headerMenuButton.classList.toggle("active"); // Анимация превращения в крестик
+
+        // Добавление логотипа и кнопки в мобильное меню при активации
+        if (headerNavActive.classList.contains("active")) {
+          let logo = document.querySelector(".header__logo").cloneNode(true);
+          let button = document.querySelector(".header__button").cloneNode(true);
+
+          logo.classList.add("header__logo--mobile");
+          button.classList.add("header__button--mobile");
+
+          headerMenuOpen.prepend(logo);
+          headerMenuOpen.append(button);
+        } else {
+          // Очистка лого и кнопки при закрытии меню
+          let mobileLogo = document.querySelector(".header__logo--mobile");
+          let mobileButton = document.querySelector(".header__button--mobile");
+
+          if (mobileLogo) mobileLogo.remove();
+          if (mobileButton) mobileButton.remove();
+        }
       }
     });
   }
-  
 });
 
 

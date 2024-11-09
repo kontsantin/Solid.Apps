@@ -1,42 +1,169 @@
-@media screen and ( max-width: 768px ) {
-     .header__nav {
-        transform: translateX(-100%);
-    }
+@media screen and (max-width: 768px) {
+
     .header__actions {
         display: none;
     }
+
     .header__burger {
         display: block;
+        z-index: 2;
     }
+
     .header__container {
         margin: 20px auto;
     }
+
     /* Базовые стили для меню и навигации */
     .header__nav {
-        justify-content: flex-end;
+        justify-content: flex-start;
         position: absolute;
         right: 0;
         top: 0;
         background-color: #FBFBFB;
         height: 100vh;
-        width: 330px; /* ширина выдвигаемого меню */
-        transform: translateX(100%); /* Начальное скрытие за правым краем */
-        transition: transform 1.3s ease; /* Плавное выдвижение */
+        width: 0px;
+        /* ширина выдвигаемого меню */
+        transition: width 0.7s ease;
+        /* Плавное выдвижение */
+        overflow: hidden;
+        /* Скрытие содержимого до активации */
     }
-    
+
     .header__nav.active {
-        transform: translateX(0); /* Полное выдвижение меню */
-        
+        width: 300px;
+        z-index: 2;
     }
-    
+
     .header__menu {
-        display: flex;
+        display: none;
         flex-direction: column;
-        justify-content: left;
         list-style: none;
         padding: 20px;
         margin: 0;
     }
-    
 
-} 
+    .header__menu.active {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    /* Стили для логотипа и кнопки в мобильном меню */
+    .header__nav .header__logo,
+    .header__nav .header__button {
+        margin-bottom: 20px;
+    }
+    .hero__row {
+        margin-top: clamp(3.75rem, 1.438rem + 11.56vw, 6.063rem);
+    }
+}
+
+@media screen  and (max-width: 1200px) {
+    .hero__title {
+        font-size: clamp(2.625rem, 2.211rem + 1.03vw, 3rem);
+        font-weight: 800;
+        line-height: clamp(3.344rem, 2.792rem + 1.38vw, 3.844rem);
+
+
+    }
+    .hero__stats-item {
+        font-size: clamp(2.375rem, 1.685rem + 1.72vw, 3rem);
+    }
+    .hero__column:first-child {
+        max-width: 420px;
+    }
+
+    .hero__background-image {
+        top: 60%;
+        left: 50%;
+        max-width: clamp(34.375rem, 18.168rem + 40.52vw, 49.063rem);
+        height: auto;
+        z-index: -1;
+    }
+
+    .hero__column {
+        max-width: clamp(12.5rem, 3.534rem + 22.41vw, 20.625rem);
+    }
+}
+@media screen and (max-width: 1024px) {
+    .telegram-app__advantage-list {
+       
+        grid-template-columns: 1fr 1fr;
+        
+        margin-top: 42px;
+    }
+    .hero__row {
+        flex-direction: column;
+        gap: 34px;
+    }
+    .hero__background-image {
+        top: 25%;
+        left: 75%;     
+       
+    }
+    .hero__column:not(:first-child) {
+        max-width: max-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero__background-image {
+        top: 25%;
+        left: 88%;
+        z-index: -1;        
+    }
+    .hero__title {
+        margin-bottom: 10px;
+        font-size: clamp(1.875rem, 1.125rem + 3.75vw, 2.625rem);
+        line-height: clamp(2.391rem, 1.434rem + 4.78vw, 3.347rem);
+    }
+    .hero__subtitle {      
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22.4px;    
+        margin-bottom: 30px;
+    }
+    .telegram-app__row {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .telegram-app__title {
+        
+        text-align: center;
+    }
+    .telegram-app {
+     margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .hero__background-image {       
+        top: auto;
+        left: auto;
+        transform: translate(-26%, -17%);
+        z-index: -1;        
+        min-width: 720px;        
+        position: relative;      
+        margin-bottom: -150px;
+    }
+    .hero__column:not(:first-child) {
+        grid-template-columns: 1fr;        
+    }
+    .hero__stats {
+        margin-bottom: 10px;
+    }
+    .hero__subtitle {
+        margin-bottom: 20px;
+    }
+    .hero__btn, .telegram-app__btn, .ideas__btn, .works__actions-link, .stages__btn, .contact-form__submit {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: none;
+    }
+    .telegram-app__advantage-list {
+        grid-template-columns: 1fr;
+        margin-top: 42px;
+    }
+}
