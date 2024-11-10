@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 ///our clients
 document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".clients__slider", {
-    slidesPerView: "3", // Показывает несколько логотипов
+    slidesPerView: "2", // Показывает несколько логотипов
     spaceBetween: 10, // Расстояние между логотипами
     loop: true, // Бесконечный цикл
     autoplay: {
@@ -50,6 +50,11 @@ document.addEventListener("DOMContentLoaded", function () {
       disableOnInteraction: false,
     },
     speed: 2000, // Скорость прокрутки
+    breakpoints: {
+      639: { 
+        slidesPerView: 3, 
+      },
+    }
   });
 });
 ///reviews

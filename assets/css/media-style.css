@@ -90,6 +90,9 @@
         padding-right: clamp(0rem, -27.5rem + 40vw, 2.5rem);
        
     }
+    .why-us__list {       
+        gap: 20px;
+    }
 }
 @media screen and (max-width: 1024px) {
     .works__image {
@@ -138,6 +141,23 @@
         width: 386px;
         right: -7%;
     }
+    .ideas {       
+        overflow: hidden;
+    }
+    .why-us__item--large {
+        grid-column: 1 / span 2; /* Растягиваем элемент на две колонки */
+        grid-row: 3; /* Размещаем элемент на последней строке */
+    }
+    .why-us__list {
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .why-us__item {
+     max-width: none;
+    }
+    .why-us__item--large >.why-us__item-content {
+        padding-left: 90px;
+    }
 }
 @media screen and (max-width: 850px) { 
     .ideas__img {
@@ -146,6 +166,32 @@
     }
     .applications__list {       
         grid-template-columns: 1fr 1fr;        
+    }
+    .testimonials__row {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+    .testimonials__slider {
+        position:unset; 
+    }
+    .testimonials__slider-actions {
+        position: absolute;
+        bottom: 0px;
+    }
+    .testimonials {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 70px;
+        position: relative;
+    }
+    .testimonials__avatar img {
+        width: 65px;
+        height: 65px;     
+    }
+    .testimonials__avatar.active img {
+        width: 85px;
+        height: 85px;
+       
     }
 }
 @media screen and (max-width: 768px) {
@@ -227,7 +273,72 @@
     text-align: start;
     margin: 0px;
 }
+.stages__list {
+    margin-top: 40px;
+    flex-direction: column;
 }
+.stages::before, .stages__list::after, .stages::after {    
+    display: none;
+
+}
+.stages__item:not(:last-child)::after {
+    top: 0px;
+    left: 30px;
+    transform: translateX(-50%);
+    width: 1px;
+    height: calc(100% + 80px);
+    background-image: repeating-linear-gradient(
+        to bottom,
+        rgba(13, 131, 239, 0.25) 0,
+        rgba(13, 131, 239, 0.25) 10px,
+        transparent 10px,
+        transparent 20px
+    );
+}
+.stages__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.stages__step {
+margin-top: 0px;
+}
+.contact-us {
+    padding: 50px 30px;
+}
+.contact-us__btn, .contact-us__link {
+    max-width: 240px;
+    font-size: 14px;
+    line-height: 17.85px;
+    padding: 20px 15px;
+    width: 100%;
+}
+.contact-us__desc {
+    font-size: 18px;
+    line-height: 22.95px;
+}
+.contact-us__title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.contact-us__actions {
+    margin-top: 30px;  
+}
+.contact-us__background {   
+    padding: 50px 0px;    
+}
+.contact-us__actions {
+    margin-top: 30px;
+    flex-direction: column;
+}
+.why-us__item-content {
+    padding-left: 80px;    
+    padding-right: 30px;
+    
+}
+
+}
+
 
 @media screen and (max-width: 639px) {
     h2 {
@@ -252,7 +363,7 @@
     .hero__subtitle {
         margin-bottom: 20px;
     }
-    .hero__btn, .stages__btn, .contact-form__submit {
+    .hero__btn, .contact-form__submit {
         position: relative;
         display: flex;
         justify-content: center;
@@ -288,7 +399,7 @@
         flex-direction: row;
     }
     .works__item-content {
-        padding: 16px 0px;
+        padding: 20px 0px;
         align-items: flex-start;
     }
     .works__description {
@@ -317,6 +428,46 @@
     .works__icon {
         max-width: 60px;
     }
+    .stages__description {
+        font-size: 16px;       
+        line-height: 20px;       
+    }
+
+    .contact-us__desc {
+        font-size: 16px;
+        line-height: 22.95px;
+    }
+    .contact-us__actions {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .contact-us__background {
+        padding: 40px 0px;
+    }
+    .why-us__list {
+        display: grid;
+        grid-template-columns: 1fr;        
+    }
+    .why-us__item {
+        grid-column: 1; /* Все элементы будут в одной колонке */
+    }
+    
+    /* Перемещаем большой элемент в самый конец */
+    .why-us__item--large {
+        grid-column: 1;
+        grid-row: 5; /* Размещает элемент в последнем ряду */
+        width: 100%; /* На всю ширину */
+    }
+    .why-us__title {
+        margin-top: 0px;
+    }
+    .why-us {
+        padding-top: 0px;
+    }
+    .clients__slider {
+        margin-top: 20px;
+        overflow: hidden;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -333,5 +484,25 @@
 }
 .applications__item:nth-child(even) {
     margin-top: 0px;
+}
+.stages__btn {
+    margin: 0 auto;
+}
+.stages__list::before {
+    display: none;
+}
+.why-us__item-content {
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+.why-us__item--large  >.why-us__item-content{
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+.why-us__link {
+    width: 100%;
+    font-size: 14px;
 }
 }
