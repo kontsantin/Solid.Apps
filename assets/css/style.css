@@ -1183,6 +1183,8 @@ button,
 
 .company-processes__card-image {
     border-radius: 16px;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -1298,6 +1300,7 @@ button,
     line-height: 25.5px;
     text-align: left;
     margin: 0px;
+    padding-right: 32px;
 }
 
 .faq__question::after {
@@ -1412,7 +1415,7 @@ button,
     justify-content: space-between;
     align-items: center;
     margin: 20px 0px;
-
+    gap: 10px;
 }
 
 .contact-form__file-button {
@@ -1443,7 +1446,8 @@ button,
 }
 
 .contact-form__flex {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     position: relative;
 }
 
@@ -1478,14 +1482,15 @@ button,
 }
 
 .footer__row {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
 }
 
 .footer__nav-list {
     list-style: none;
     padding: 0;
+    gap: 10px;
     margin: 0;
     display: flex;
     justify-content: space-between;
