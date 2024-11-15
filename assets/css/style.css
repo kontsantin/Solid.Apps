@@ -717,8 +717,10 @@ button,
     display: block;
     background-image: url(../img/ArrowUpRight.svg);
     transform: rotate(45deg);
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 20px;
+    top: -1px;
+    position: relative;
 }
 
 .works__actions {
@@ -2404,6 +2406,37 @@ button,
 }
 
 .results__value {
-
     margin: 0px;
+}
+.category-button {
+    max-width: fit-content;
+    padding: 10px 25px;
+    height: auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    border: 1px solid #40434E;
+    color: #40434E;
+    min-width: fit-content;
+}
+.category-button.active {
+    background-color: #0D83EF;
+    color: #fff;
+    border: none;
+}
+.category-buttons {
+    display: flex;
+    gap: 20px;
+    overflow: scroll;
+    padding: 20px 0px;
+}
+.project-archive__header {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+.archive-description {
+    margin-bottom: 0px;
+}
+.archive-blog .company-processes__cards {
+margin-top: 0px;
 }

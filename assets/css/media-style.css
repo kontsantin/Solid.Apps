@@ -739,6 +739,12 @@ top: 0;
 
 
 @media screen and (max-width: 639px) {
+    .archive-title {
+        margin-bottom: 0px;
+    }
+    .project-archive__header {        
+        grid-template-columns: 1fr;
+    }
     .post-features__list {
         grid-template-columns: 1fr;
     }
