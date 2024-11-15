@@ -735,6 +735,10 @@ top: 0;
         .team-member {            
             max-width: 220px;           
         }
+        .category-buttons {          
+            overflow-x: scroll;
+            
+        }
 }
 
 
