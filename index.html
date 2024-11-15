@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/media-style.css">
     <script src="./assets/js/main.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <title>Solid.Apps</title>
 </head>
 <div class="overlay"></div>
@@ -33,9 +33,10 @@
                     </nav>
                 </div>
                 <div class="header__actions">
-                    <div class="header__social">
-
-                    </div>
+                    <a class="header__socials-link" href="#">
+                        Наш канал про Mini Apps
+                        <img class="header__socials-item" src="./assets/img/Telegram.svg" alt="">
+                    </a>
                     <button class="header__button">Обсудить проект</button>
                 </div>
                 <div class="header__burger">
@@ -56,7 +57,7 @@
                         <h1 class="hero__title">Разработка <span>Telegram Mini Apps</span> под ключ</h1>
                         <p class="hero__subtitle">Поможем реализовать идею вашего продукта и запустить на аудиторию
                             более чем 900 млн пользователей</p>
-                        <button class="btn hero__btn">Обсудить проект</button>
+                        <button class="btn hero__btn open__popup">Обсудить проект</button>
                     </div>
                     <img class="hero__background-image" src="./assets/img/iPhone Mockup.png" alt="Background Image">
                     <div class="hero__column">
@@ -412,7 +413,7 @@
                 </div>
             </div>
         </section>
-      <!--         
+  
         <section class="testimonials">
             <div class="container">
                 <div class="testimonials__row">
@@ -533,7 +534,7 @@
             </div>
 
         </section>
-        -->
+     
 
         <section class="company-processes">
             <div class="container">
@@ -658,7 +659,7 @@
 
 
                 <div class="company-processes__button-container">
-                    <a href="https://vc.ru" class="button company-processes__button">Пперейти в блог</a>
+                    <a href="https://vc.ru" class="button company-processes__button">Перейти в блог</a>
                 </div>
             </div>
         </section>
@@ -791,7 +792,30 @@
             </div>
         </div>
     </footer>
-
+    <div class="popup">
+        <div class="popup__overlay"></div> <!-- Затемненный фон -->
+        <div class="popup__content">
+          <div class="popup__close" type="button" aria-label="Закрыть попап"></div>
+      
+          <h2 class="popup__title">Заявка на обратный звонок</h2>
+          <p class="popup__description">Оставьте ваши контактные данные и мы свяжемся с вами при первой возможности</p>
+      
+          <form class="popup__form">
+            <div class="popup__field">
+              <label for="name" class="popup__label">Ваше имя</label>
+              <input type="text" id="name-input" class="popup__input" required>
+            </div>
+      
+            <div class="popup__field">
+              <label for="phone" class="popup__label">Ваш телефон</label>
+              <input type="tel" id="phone" class="popup__input"  required>
+            </div>
+      
+            <button type="submit" class="popup__submit btn">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+      
 </body>
 
 </html>

@@ -15,20 +15,20 @@ document.addEventListener("DOMContentLoaded", function () {
         overLayActive.classList.toggle("active");
         headerMenuButton.classList.toggle("active"); // Анимация превращения в крестик
 
-        // Добавление логотипа и кнопки в мобильное меню при активации
+        // Добавление логотипа и кнопки в мобильное меню при активации 
         if (headerNavActive.classList.contains("active")) {
           let logo = document.querySelector(".header__logo").cloneNode(true);
-          let button = document.querySelector(".header__button").cloneNode(true);
+          let button = document.querySelector(".header__actions").cloneNode(true);
 
           logo.classList.add("header__logo--mobile");
-          button.classList.add("header__button--mobile");
+          button.classList.add("header__actions--mobile");
 
           headerMenuOpen.prepend(logo);
           headerMenuOpen.append(button);
         } else {
           // Очистка лого и кнопки при закрытии меню
           let mobileLogo = document.querySelector(".header__logo--mobile");
-          let mobileButton = document.querySelector(".header__button--mobile");
+          let mobileButton = document.querySelector(".header__actions--mobile");
 
           if (mobileLogo) mobileLogo.remove();
           if (mobileButton) mobileButton.remove();
@@ -37,6 +37,97 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+// Попап
+document.addEventListener("DOMContentLoaded", function () {
+  const popup = document.querySelector(".popup");
+  const overlay = document.querySelector(".overlay");
+  const closeButton = document.querySelector(".popup__close");
+  const openButton = document.querySelector(".open__popup");
+
+  function openPopup() {
+    if (popup && overlay) {
+      popup.classList.add("active");
+      overlay.classList.add("active");
+    }
+  }
+
+  function closePopup() {
+    if (popup && overlay) {
+      popup.classList.remove("active");
+      overlay.classList.remove("active");
+    }
+  }
+
+  // Проверяем наличие элементов перед добавлением обработчиков событий
+  if (openButton) {
+    openButton.addEventListener("click", openPopup);
+  }
+
+  if (closeButton) {
+    closeButton.addEventListener("click", closePopup);
+  }
+
+  if (overlay) {
+    overlay.addEventListener("click", closePopup);
+  }
+});
+//slider single-post
+document.addEventListener("DOMContentLoaded", function () {
+  // Проверяем наличие контейнера слайдера, чтобы избежать ошибок
+  const sliderContainer = document.querySelector(".project-slider__swiper");
+
+  if (sliderContainer) {
+      // Инициализируем Swiper
+      const projectSlider = new Swiper(sliderContainer, {          
+        
+          slidesPerView: 2,
+          spaceBetween: 10,
+          breakpoints: {
+              // Показывает больше слайдов на большем экране
+              640: { slidesPerView: 3, spaceBetween: 20 },
+              768: { slidesPerView: 3, spaceBetween: 30 },
+              1024: { slidesPerView: 4, spaceBetween: 40 },
+          }
+      });
+
+    
+  }
+});
+
+///Слайдер нашей команды
+document.addEventListener('DOMContentLoaded', function () {
+  const prevArrow = document.querySelector(".team__slider__arrow--left");
+  const nextArrow = document.querySelector(".team__slider__arrow--right");
+
+
+
+  const swiper = new Swiper('.team__slider', {
+    slidesPerView: 4,
+    spaceBetween: 40,
+    loop: false,
+    navigation: {
+      prevEl: prevArrow,
+      nextEl: nextArrow,
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      640: {
+        spaceBetween: 18,
+        slidesPerView: 2,
+      },
+      320: {
+        slidesPerView: 1,
+      },
+    },   
+  });
+});
+
 
 
 ///our clients
@@ -57,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-///reviews
+// Секция отзывов
 document.addEventListener("DOMContentLoaded", function () {
   const avatars = document.querySelectorAll(".testimonials__avatar");
   const reviews = document.querySelectorAll(".testimonials__review");
@@ -67,48 +158,46 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentIndex = 0;
 
   function showReview(index) {
-    // Снять активный класс со всех аватаров и отзывов
-    avatars.forEach((avatar) => avatar.classList.remove("active"));
-    reviews.forEach((review) => review.classList.remove("active"));
+    // Проверяем наличие элементов перед выполнением функции
+    if (avatars.length && reviews.length) {
+      avatars.forEach((avatar) => avatar.classList.remove("active"));
+      reviews.forEach((review) => review.classList.remove("active"));
 
-    // Добавить активный класс для выбранного аватара и отзыва
-    avatars[index].classList.add("active");
-    reviews[index].classList.add("active");
+      avatars[index].classList.add("active");
+      reviews[index].classList.add("active");
 
-    // Обновить состояние кнопок
-    updateArrows();
+      updateArrows();
+    }
   }
 
   function updateArrows() {
-    prevArrow.classList.toggle("disabled", currentIndex === 0);
-    nextArrow.classList.toggle("disabled", currentIndex === avatars.length - 1);
+    if (prevArrow && nextArrow) {
+      prevArrow.classList.toggle("disabled", currentIndex === 0);
+      nextArrow.classList.toggle("disabled", currentIndex === avatars.length - 1);
+    }
   }
 
-  // Обработчики для стрелок
-  prevArrow.addEventListener("click", function () {
-    if (currentIndex > 0) {
-      currentIndex--;
-      showReview(currentIndex);
-    }
-  });
-
-  nextArrow.addEventListener("click", function () {
-    if (currentIndex < avatars.length - 1) {
-      currentIndex++;
-      showReview(currentIndex);
-    }
-  });
-
-  // Обработчики для клика по аватарам
-  avatars.forEach((avatar, index) => {
-    avatar.addEventListener("click", function () {
-      currentIndex = index;
-      showReview(index);
+  // Проверяем наличие элементов перед добавлением обработчиков событий
+  if (prevArrow && nextArrow) {
+    prevArrow.addEventListener("click", function () {
+      if (currentIndex > 0) {
+        currentIndex--;
+        showReview(currentIndex);
+      }
     });
-  });
 
-  // Показать первый отзыв по умолчанию
-  showReview(currentIndex);
+    nextArrow.addEventListener("click", function () {
+      if (currentIndex < avatars.length - 1) {
+        currentIndex++;
+        showReview(currentIndex);
+      }
+    });
+  }
+
+  // Проверяем наличие отзывов и аватаров перед запуском функции
+  if (avatars.length && reviews.length) {
+    showReview(currentIndex);
+  }
 });
 
 ///Faq

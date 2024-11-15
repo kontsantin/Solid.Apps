@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media-style.css">
+    <script src="./assets/js/main.js"></script>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <title>Solid.Apps</title>
+</head>
+<div class="overlay"></div>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__row">
+                <div class="header__wrapper">
+                    <a class="header__logo" href="#">
+                        <img class="header__logo-image" src="./assets/img/logo.svg" alt="logo">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__menu">
+                            <li class="header__menu-item"><a href="#" class="header__link">Кейсы</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__link">О нас</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__link">Контакты</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__link">Блог</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__actions">
+                    <a class="header__socials-link" href="#">
+                        Наш канал про Mini Apps
+                        <img class="header__socials-item" src="./assets/img/Telegram.svg" alt="">
+                    </a>
+                    <button class="header__button">Обсудить проект</button>
+                </div>
+                <div class="header__burger">
+                    <span class="header__burger-line header__burger-line--top"></span>
+                    <span class="header__burger-line header__burger-line--middle"></span>
+                    <span class="header__burger-line header__burger-line--bottom"></span>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Каталог</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__current">О нас</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">
+                    О нас
+                </h1>
+            </div>
+        </div>
+        <div class="page-content">
+            <section class="about-hero">
+                <div class="container">
+                    <div class="about-hero__backgrond">
+                        <img class="about-hero__backgrond-img" src="./assets/img/SOLID.APPS.svg" alt="">
+                    </div>
+                    <div class="about-hero__content">
+                        <div class="about-hero__desc">
+                            <p>
+                                Мы занимаемся созданием Telegram Mini Apps под ключ. Нашими клиентами являются крупные
+                                российские компании, средний бизнес и стартапы. Разрабатываем продукты в разных сферах:
+                                от простых игр до сложных DeFi продуктов с интеграцией TON Blockchain
+                            </p>
+                            <div class="about-hero__stats">
+                                <div class="about-hero__stat-item">
+                                    <p class="about-hero__stat-value"><span>>15</span>человек</p>
+                                    <p class="about-hero__stat-desc">Пользователей в Telegram</p>
+                                </div>
+                                <div class="about-hero__stat-item">
+                                    <p class="about-hero__stat-value"><span>>5</span> лет</p>
+                                    <p class="about-hero__stat-desc">Опыт создания IT продуктов
+                                        (Занимались Mini Apps еще до хайпа Hamster Kombat)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-hero__img">
+                            <img class="about-hero__img" src="./assets/img/2-removebg.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Блок описания компании -->
+            <section class="why-us">
+                <div class="container">
+                    <h2 class="why-us__title">Почему мы?</h2>
+                    <div class="why-us__list">
+                        <div class="why-us__item about-why-us__item">
+                            <div class="why-us__icon about-why-us__icon">
+
+                            </div>
+                            <div class="why-us__item-content">
+                                <h3 class="why-us__subtitle">Надежность и качество</h3>
+                                <p class="why-us__description">Ориентация на результат. Тестируем каждую новую
+                                    разработанную и защищаем продукт от атак.</p>
+                            </div>
+                        </div>
+                        <div class="why-us__item about-why-us__item">
+                            <div class="why-us__icon about-why-us__icon">
+
+                            </div>
+                            <div class="why-us__item-content">
+                                <h3 class="why-us__subtitle">Метрики успеха</h3>
+                                <p class="why-us__description">При разработке думаем про ключевые метрики: Retention,
+                                    DAU, MAU и ARPPU.</p>
+                            </div>
+                        </div>
+                        <div class="why-us__item about-why-us__item">
+                            <div class="why-us__icon about-why-us__icon">
+
+                            </div>
+                            <div class="why-us__item-content">
+                                <h3 class="why-us__subtitle">Экспертиза</h3>
+                                <p class="why-us__description">Мы пристально следим за развитием технологии mini apps,
+                                    применяем лучшие практики и делимся этим в нашем Telegram-канале.</p>
+                            </div>
+                        </div>
+                        <div class="why-us__item about-why-us__item">
+                            <div class="why-us__icon about-why-us__icon">
+
+                            </div>
+                            <div class="why-us__item-content">
+                                <h3 class="why-us__subtitle">Профессионализм</h3>
+                                <p class="why-us__description">Объединяем в нашей команде специалистов с опытом создания
+                                    Mini App.</p>
+                            </div>
+                        </div>
+                        <div class="why-us__item why-us__item--large about-why-us__item">
+                            <div class="why-us__icon about-why-us__icon">
+
+                            </div>
+                            <div class="why-us__item-content about-why-us__item-content">
+                                <h3 class="why-us__subtitle">Прозрачность и гибкость</h3>
+                                <p class="why-us__description">Благодаря выстроенной системе отчетов и итеративному
+                                    подходу вы всегда в курсе, что происходит с вашим проектом.</p>
+                                <a href="https://t.me/your_telegram_channel"
+                                    class="button why-us__link about-why-us__link" target="_blank">Перейти в наш
+                                    Телеграм</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="our-values">
+                <div class="container">
+                    <div class="our-values-content">
+                        <!-- Первый блок: Заголовок и описание -->
+                        <div class="our-values__header">
+                            <h2 class="our-values__title">Наши ценности</h2>
+                            <p class="our-values__description">
+                                Задача организации, в особенности же высокое качество позиционных исследований требует
+                                анализа дальнейших направлений развития. </p>
+                        </div>
+
+                        <!-- Второй блок: Лист с элементами -->
+                        <div class="our-values__list">
+                            <div class="our-values__item">
+                                <img class="our-values__item-img" src="./assets/img/Crown.svg" alt="Профессионализм">
+                                <h3 class="our-values__item-title">Профессионализм</h3>
+                                <p class="our-values__item-description">
+                                    Делимся экспертностью чтобы найти оптимальное решение </p>
+                            </div>
+                            <div class="our-values__item">
+                                <img class="our-values__item-img" src="./assets/img/Heart.svg" alt="Доверие">
+                                <h3 class="our-values__item-title">Доверие</h3>
+                                <p class="our-values__item-description">
+                                    Доверяем профессиональному мнению клиента и ждем того же в ответ </p>
+                            </div>
+                            <div class="our-values__item">
+                                <img class="our-values__item-img" src="./assets/img/Stack.svg" alt="Предсказуемость">
+
+                                <h3 class="our-values__item-title">Предсказуемость</h3>
+                                <p class="our-values__item-description">
+                                    Соблюдаем сроки
+                                    и обязательства. Выстраиваем прозрачную работу над проектом </p>
+                            </div>
+                            <div class="our-values__item">
+                                <img class="our-values__item-img" src="./assets/img/Gear.svg" alt="Эффективность">
+
+                                <h3 class="our-values__item-title">Эффективность</h3>
+                                <p class="our-values__item-description">
+                                    Гибкость и слаженная командная работа позволяют нам быстро достигать нужного
+                                    результата
+                                </p>
+                            </div>
+                            <div class="our-values__item">
+                                <img class="our-values__item-img" src="./assets/img/LightbulbFilament.svg"
+                                    alt="Воплеченность">
+
+                                <h3 class="our-values__item-title">Воплеченность</h3>
+                                <p class="our-values__item-description">
+                                    Над каждым проектом работаем так, чтобы гордится результатом </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="team">
+                <div class="container team__container">
+                    <div class="team__header">
+                        <h2 class="team__title">Команда</h2>
+                        <div class="team__slider-actions">
+                            <button class="team__slider__arrow team__slider__arrow--left"></button>
+                            <button class="team__slider__arrow team__slider__arrow--right"></button>
+                        </div>
+                    </div>
+                    
+
+                    <div class="swiper-container team__slider">
+                       
+                        <div class="swiper-wrapper team__slider-wrapper">
+                            <div class="swiper-slide team-member">
+                                <img src="./assets/img/team1.jpg" alt="Фото участника" class="team-member__photo">
+                                <a href="https://t.me/username" target="_blank" class="team-member__telegram">
+                                    <img src="./assets/img/Telegram.svg" alt="Telegram">
+                                </a>
+                                <div class="team-member__info">
+                                   
+                                    <h3 class="team-member__name">Иван Иванов</h3>
+                                    <p class="team-member__position">Должность</p>
+                                  
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide team-member">
+                                <img src="./assets/img/team2.jpg" alt="Фото участника" class="team-member__photo">
+                                <a href="https://t.me/username" target="_blank" class="team-member__telegram">
+                                    <img src="./assets/img/Telegram.svg" alt="Telegram">
+                                </a>
+                                <div class="team-member__info">
+                                  
+                                    <h3 class="team-member__name">Алексей Петров</h3>
+                                    <p class="team-member__position">Должность</p>
+                                   
+                                </div>
+                            </div>
+                            <div class="swiper-slide team-member">
+                                <a href="https://t.me/username" target="_blank" class="team-member__telegram">
+                                    <img src="./assets/img/telegram.svg" alt="Telegram">
+                                </a>
+                                <img src="./assets/img/team3.jpg" alt="Фото участника" class="team-member__photo">
+                                <div class="team-member__info">
+                                   
+                                    <h3 class="team-member__name">Алексей Петров</h3>
+                                    <p class="team-member__position">Должность</p>
+                                  
+                                </div>
+                            </div>
+                            <div class="swiper-slide team-member">
+                                <img src="./assets/img/team4.jpg" alt="Фото участника" class="team-member__photo">
+                                <a href="https://t.me/username" target="_blank" class="team-member__telegram">
+                                    <img src="./assets/img/telegram.svg" alt="Telegram">
+                                </a>
+                                <div class="team-member__info">
+                                   
+                                    <h3 class="team-member__name">Алексей Петров</h3>
+                                    <p class="team-member__position">Должность</p>
+                                 
+                                </div>
+                            </div>
+                            <div class="swiper-slide team-member">
+                                <img src="./assets/img/team2.jpg" alt="Фото участника" class="team-member__photo">
+                                <a href="https://t.me/username" target="_blank" class="team-member__telegram">
+                                    <img src="./assets/img/telegram.svg" alt="Telegram">
+                                </a>
+                                <div class="team-member__info">
+                                
+                                    <h3 class="team-member__name">Алексей Петров</h3>
+                                    <p class="team-member__position">Должность</p>
+                                   
+                                </div>
+                            </div>
+                            <div class="swiper-slide team-member">
+                                <img src="./assets/img/team1.jpg" alt="Фото участника" class="team-member__photo">
+                                <a href="https://t.me/username" target="_blank" class="team-member__telegram">
+                                    <img src="./assets/img/telegram.svg" alt="Telegram">
+                                </a>
+                                <div class="team-member__info">
+                                   
+                                    <h3 class="team-member__name">Алексей Петров</h3>
+                                    <p class="team-member__position">Должность</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="contact-form">
+                <div class="container">
+                    <div class="contact-form__flex">
+                        <div class="contact-form-wrap">
+                            <h2 class="contact-form__title">Остались вопросы?</h2>
+    
+                            <form class="contact-form__form" id="feedbackForm">
+                                <div class="contact-form__field">
+                                    <label for="name">Ваше имя *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="contact-form__field">
+                                    <label for="contact">Телеграм или почта *</label>
+                                    <input type="text" id="contact" name="contact" required>
+                                </div>
+                                <div class="contact-form__field">
+                                    <label for="idea">Расскажите свою идею *</label>
+                                    <div class="contact-form__char-counter">
+                                        <span id="charCount">0</span>/300
+                                    </div>
+                                    <textarea id="idea" name="idea" maxlength="300" required></textarea>
+    
+                                </div>
+                                <div class="contact-form__field contact-form__field--action">
+    
+                                    <input type="file" id="file" name="file" accept=".pdf, .png, .jpg, .jpeg, .mp4, .docx"
+                                        class="contact-form__input-file">
+                                    <button type="button" class="contact-form__file-button"
+                                        onclick="document.getElementById('file').click()">Прикрепить файл</button>
+                                    <label for="file" class="contact-form__label">(PDF, PNG, JPG, MP4, DOCX до 50
+                                        МБ)</label>
+                                    <div id="fileError" class="contact-form__file-error"></div>
+                                </div>
+                                <button type="submit" class="contact-form__submit btn">Оставить заявку</button>
+                            </form>
+    
+    
+                        </div> <img class="contact-form__image"
+                            src="./assets/img/9-99890_paper-plane-png-clip-art-imageu200b-gallery-yopriceville 1.svg"
+                            alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__top">
+                <div class="footer__row">
+                    <a class="footer__logo-link" href="#">
+                        <img class="footer__logo" src="./assets/img/logo.svg" alt="Logo">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Главная</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">О нас</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Кейсы</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Блог</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__actions">
+                        <a href="#" class="button footer__actions-link">Наш канал про Mini Apps</a>
+                        <button class="btn footer__actions-btn">Обсудить проект</button>
+                    </div>
+                </div>
+
+                <div class="footer__author-name">
+                    ИП Аветисян Артур Рубенович <br>ИНН 590308726244
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__container container">
+                <div class="footer__info">
+                    <p class="footer__text">&copy; 2024 Solid.Apps. Все права защищены.</p>
+                    <a class="footer__link-page" href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup">
+        <div class="popup__overlay"></div> <!-- Затемненный фон -->
+        <div class="popup__content">
+            <div class="popup__close" type="button" aria-label="Закрыть попап"></div>
+
+            <h2 class="popup__title">Заявка на обратный звонок</h2>
+            <p class="popup__description">Оставьте ваши контактные данные и мы свяжемся с вами при первой возможности
+            </p>
+
+            <form class="popup__form">
+                <div class="popup__field">
+                    <label for="name" class="popup__label">Ваше имя</label>
+                    <input type="text" id="name-input" class="popup__input" required>
+                </div>
+
+                <div class="popup__field">
+                    <label for="phone" class="popup__label">Ваш телефон</label>
+                    <input type="tel" id="phone" class="popup__input" required>
+                </div>
+
+                <button type="submit" class="popup__submit btn">Оставить заявку</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

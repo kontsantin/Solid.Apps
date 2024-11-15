@@ -1,73 +1,20 @@
 @media screen and (max-width: 768px) {
 
-    .header__actions {
-        display: none;
-    }
 
-    .header__burger {
-        display: block;
-        z-index: 2;
-    }
 
-    .header__container {
-        margin: 20px auto;
-    }
-
-    /* Базовые стили для меню и навигации */
-    .header__nav {
-        justify-content: flex-start;
-        position: fixed;
-        right: 0;
-        top: 0;
-        background-color: #FBFBFB;
-        height: 100vh;
-        width: 0px;
-        /* ширина выдвигаемого меню */
-        transition: width 0.7s ease;
-        /* Плавное выдвижение */
-        overflow: hidden;
-        /* Скрытие содержимого до активации */
-    }
-
-    .header__nav.active {
-        width: 300px;
-        z-index: 2;
-    }
-
-    .header__menu {
-        display: none;
-        flex-direction: column;
-        list-style: none;
-        padding: 20px;
-        margin: 0;
-    }
-    .header__link {
-        font-size: 20px;
-        
-    }
-    .header__menu.active {
-        display: flex;
-        align-items: flex-start;
-        padding-left: 40px;
-        gap: 20px;
-        justify-content: flex-start;
-    }
-
-    /* Стили для логотипа и кнопки в мобильном меню */
-    .header__nav .header__logo,
-    .header__nav .header__button {
-        margin-bottom: 20px;
-    }
-
-    .hero__row {
-        margin-top: clamp(3.75rem, 1.438rem + 11.56vw, 6.063rem);
-    }
+    
 }
 
 @media screen and (max-width: 1400px) {
     .contact-form__image {
         max-width: 676px;
         right: 0px;
+    }
+    .contact-info__contact-form-wrap {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);       
     }
 }
 
@@ -125,6 +72,112 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .project-stages__step:last-child .project-stages__step-title::after {
+        display: none;
+    }   
+    .project-stages__step-title::after { 
+        top: 45px;
+        left: 50%;
+        transform: translate(-50%);
+        transform: translate(-50%) rotate(90deg);
+    }
+    .project-stages__step-title{
+        position: relative;
+
+    }
+    .project-stages__step {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        align-items: baseline;
+        gap: 20px;
+    }
+    .project-stages__steps {        
+        grid-template-columns: 1fr;
+    }
+    .project-stages__header {
+        grid-template-columns: 1fr;
+        margin-bottom: 40px;        
+    }
+    .project-slider,
+.project-stages,
+.post-features,
+.results {
+    padding: 40px 0px;
+}
+    .post-features__list {        
+        grid-template-columns: 1fr 1fr;       
+    }
+    .single-post__title {
+        text-align: center;
+    }
+    .single-post__description {
+        max-width: 520px;
+        text-align: center;
+    }
+    .single-post__image-wrapper::after {
+        content: ""; /* Убедись, что псевдоэлемент отображается */
+        width: 547px;
+        height: 547px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Сдвигаем элемент на его половину ширины и высоты */
+    }
+    .single-post__image {
+position: relative;
+top: 0;
+    }
+    .single-post__hero-wrap {   
+        grid-template-columns: 1fr;
+        margin-bottom: 70px;
+    }
+    .single-post__image-wrapper {
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+    }
+    .single-post__intro {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+    .our-values__header {
+        position: static;
+    }
+    .our-values__header::after {
+        right: 0px;
+        bottom: 0px;
+    }
+    .our-values::after {
+        width: 160px;
+        height: 500px;
+        top: -111px;
+    }
+    .our-values__description {
+        margin-top: 20px;        
+    }
+    .our-values__header {        
+        max-width: 460px;
+        
+    }
+    .our-values-content {       
+        flex-direction: column;
+        gap: 0px;
+    }
+    .about-hero__backgrond-img {
+        top: 60px;
+    }
+    .about-hero__backgrond {
+        height: 20vh;
+    }
+    .about-hero__img {
+        right: -159px;
+        top: -123px;
+    }
+    .about-hero__backgrond-img {        
+        width: 105%; 
+    }
     .works__image {
         height: 250px;
         margin-top: 0px;
@@ -235,9 +288,20 @@
     .footer__actions-btn {
         max-width: 224px;
     }
+    .contact-info__wrap {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .contact-info__contact-form-wrap {
+        position: relative;
+        margin-top: -50px;
+    }
 }
 
 @media screen and (max-width: 850px) {
+    .about-hero__backgrond {
+        height: 12vh;
+    }
     .contact-form__flex {
         grid-template-columns: 1.8fr 1fr;
     }
@@ -301,7 +365,163 @@
 }
 
 @media screen and (max-width: 768px) {
+    .project-stages__title::after {
+        top: auto;
+        right: 0;
+        bottom: 0px;
+    }
+    .project-stages__title {
+        position: static;
+    }
+    .team-member__name {
+        font-size: 14px;
+        font-weight: 600;       
+    }
+    .team-member__position {
+        margin-top: 0px;
+    }
+    .our-values__list {        
+        grid-template-columns: 1fr 1fr;        
+    }
+    .about-hero__stat-desc {
+        margin: 0;
+        font-size: 16px;
+    }
+    .about-hero__desc > p {
+        max-width: 352px;
+    }
+    .about-hero__stat-desc {        
+        max-width: 204px;
+    }
+    .about-hero__content {        
+        grid-template-columns: 1fr;        
+    }
+    .about-hero__img {
+        right: -159px;
+        top: -80px;
+    }
+    .about-hero__backgrond {
+        height: 9vh;
+    }
+    .about-hero__backgrond-img {
+        width: 100%;
+    }
+    .about-hero__img {
+        max-width: 670px;
+    }
+    .about-hero__backgrond-img {
+        top: 40px;
+    }
+    .header__burger {
+        display: block;
+        z-index: 2;
+    }
+    .header__burger.active {
+        position: fixed;
+        right: 20px;
+        top: 40px;
+    }
+    .header__container {
+        margin: 20px auto;
+    }
 
+    /* Базовые стили для меню и навигации */
+    .header__nav {
+        justify-content: flex-start;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: #FBFBFB;
+        height: 100vh;
+        width: 0px;
+        /* ширина выдвигаемого меню */
+        transition: width 0.7s ease;
+        /* Плавное выдвижение */
+        overflow: hidden;
+        /* Скрытие содержимого до активации */
+    }
+
+    .header__nav.active {
+        max-width: none;
+        width: 330px;
+        z-index: 2;
+    }
+
+    .header__menu {
+        display: none;
+        flex-direction: column;
+        list-style: none;
+        padding: 20px;
+        margin: 0;
+    }
+    .header__link {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .header__menu.active {
+        display: flex;
+        align-items: flex-start;
+        padding-left: 40px;
+        gap: 25px;
+        justify-content: flex-start;
+    }
+.header__button {
+    display: none;
+}
+.header__actions {    
+    width: 100%;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: end;
+}
+.header__actions--mobile {
+    max-width: none;
+    margin-top: 55px;
+}
+.project-stages::after {   
+    width: 137px;
+    height: 490px;
+}
+.header__actions--mobile .header__socials-item {
+    display: none;
+}
+    /* Стили для логотипа и кнопки в мобильном меню */
+    .header__nav .header__logo,
+    .header__nav .header__button {
+        margin-bottom: 20px;
+    }
+
+    .hero__row {
+        margin-top: clamp(3.75rem, 1.438rem + 11.56vw, 6.063rem);
+    }
+
+    .header__actions--mobile .header__socials-link,.header__actions--mobile .header__button {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 18px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 19.2px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        border: 1px solid #0073e6;
+        color: #0D83EF;
+        border-radius: 100px;
+        width: 245px;
+    }
+    .header__actions--mobile .header__button {
+        display: block;
+        background-color: #0D83EF;
+        color: #fff;
+    }
+    .header__actions--mobile .header__socials-link::before {
+        content: '';
+        display: block;
+        background-image: url(../img/TelegramLogo-blue.svg);
+        width: 18px;
+        height: 18px;
+    }
     .company-processes__cards {
         grid-template-columns: 1fr 1fr;
         margin-top: 20px;
@@ -503,23 +723,100 @@
     .contact-form-wrap {
         max-width: none;
     }
+    .testimonials__avatar {
+        max-width: 85px;
+        width: 100%;
+        height: 85px;
+        position: relative;
+    }
+    .testimonials__avatars {
+        justify-content: start;
+        }
+        .team-member {            
+            max-width: 220px;           
+        }
 }
 
 
 @media screen and (max-width: 639px) {
+    .post-features__list {
+        grid-template-columns: 1fr;
+    }
+    .single-post__actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    .single-post__actions {
+        margin-top: 30px;   
+    }
+    .results__list {     
+        margin-bottom: 30px;        
+    }
+    .results__actions {
+        text-align: center;
+    }
+    .results__desc {
+        margin: 5px 0;
+    }
+    .results__backround {
+        display: flex;
+        margin: 0 auto;
+    }  
+    .results__backround::after {        
+        left: 50%;
+        transform: translate(-50%);
+        transform: translate(-50%) rotate(90deg);
+        z-index: -1;
+    }
+    .results__row {      
+        grid-template-columns: 1fr;
+    }
+    .our-values__header {
+        max-width: 460px;
+        text-align: center;
+    }
+    .our-values {
+        padding: 20px 0px;       
+    }
+    .our-values__list {
+        grid-template-columns: 1fr;
+    }
+    .about-hero__stats {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-hero__img {
+        max-width: 539px;
+        position: relative;
+        margin: 0 auto;
+        top: auto;
+        right: auto;
+        left: -30px;
+    }
+    
+    .about-hero__content {
+        display: block;
+    }
+    
+    .about-hero__backgrond {
+        height: 43px;
+    }
+    .about-hero__backgrond-img {
+        top: 20px;
+    }
     h2 {
         font-size: clamp(1.75rem, 1.125rem + 3.13vw, 2.375rem);
         line-height: clamp(2.231rem, 1.431rem + 4vw, 3.031rem);
     }
-
+    .page-title {
+        margin-top: 10px;
+    }
     .hero__background-image {
-        top: auto;
-        left: auto;
-        transform: translate(-26%, -17%);
-        z-index: -1;
-        min-width: 720px;
+        width: 140vw;
+        min-width: unset;
+        transform: translate(-72%, 0%) scale(1.5);
+        margin-bottom: 0;
         position: relative;
-        margin-bottom: -150px;
     }
 
     .hero__column:not(:first-child) {
@@ -538,8 +835,7 @@
         position: relative;
         display: flex;
         justify-content: center;
-        align-items: center;
-        max-width: none;
+        align-items: center;       
     }
 
     .telegram-app__advantage-list {
@@ -561,7 +857,10 @@
         padding: 20px 10px;
         font-size: 14px;
     }
-
+    .ideas__wrap {
+        display: flex;
+        justify-content: center;
+    }
     .ideas__backgound {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -687,10 +986,19 @@
     .footer__actions {
         align-items: start;
     }
-
+    .contact-info__wrap {
+        grid-template-columns: 1fr;       
+    }
 }
 
 @media screen and (max-width: 540px) {
+        .project-goal__wrapper {        
+        grid-template-columns: 1fr;    
+    }
+    .project-goal__block:nth-child(3) {
+        grid-column: 1;
+        grid-row: 3;
+    }
     .advantages__list {
         grid-template-columns: 1fr;
     }
@@ -767,5 +1075,29 @@
     }
     .footer__info {
         flex-direction: column;
+    }
+    .hero__btn {
+        max-width: none;
+    }
+    .applications__item {
+        max-width: none;
+
+    }
+    .applications__item-image {       
+        width: max-content;
+        left: auto;
+        bottom: 0px;
+        right: 0px;
+        
+    }
+    .results__button {
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 460px)  {
+    .single-post__button, .single-post__link {
+        width: 100%;
+        max-width: none;
     }
 }

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media-style.css">
+    <script src="./assets/js/main.js"></script>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <title>Solid.Apps</title>
+</head>
+<div class="overlay"></div>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__row">
+                <div class="header__wrapper">
+                    <a class="header__logo" href="#">
+                        <img class="header__logo-image" src="./assets/img/logo.svg" alt="logo">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__menu">
+                            <li class="header__menu-item"><a href="#" class="header__link">Кейсы</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__link">О нас</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__link">Контакты</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__link">Блог</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__actions">
+                    <a class="header__socials-link" href="#">
+                        Наш канал про Mini Apps
+                        <img class="header__socials-item" src="./assets/img/Telegram.svg" alt="">
+                    </a>
+                    <button class="header__button">Обсудить проект</button>
+                </div>
+                <div class="header__burger">
+                    <span class="header__burger-line header__burger-line--top"></span>
+                    <span class="header__burger-line header__burger-line--middle"></span>
+                    <span class="header__burger-line header__burger-line--bottom"></span>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Каталог</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__current">Pictographs</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+</main>
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__top">
+            <div class="footer__row">
+                <a class="footer__logo-link" href="#">
+                    <img class="footer__logo" src="./assets/img/logo.svg" alt="Logo">
+                </a>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Главная</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">О нас</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Кейсы</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Блог</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__actions">
+                    <a href="#" class="button footer__actions-link">Наш канал про Mini Apps</a>
+                    <button class="btn footer__actions-btn">Обсудить проект</button>
+                </div>
+            </div>
+
+            <div class="footer__author-name">
+                ИП Аветисян Артур Рубенович <br>ИНН 590308726244
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__bottom">
+        <div class="footer__container container">
+            <div class="footer__info">
+                <p class="footer__text">&copy; 2024 Solid.Apps. Все права защищены.</p>
+                <a class="footer__link-page" href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="popup">
+    <div class="popup__overlay"></div> <!-- Затемненный фон -->
+    <div class="popup__content">
+        <div class="popup__close" type="button" aria-label="Закрыть попап"></div>
+
+        <h2 class="popup__title">Заявка на обратный звонок</h2>
+        <p class="popup__description">Оставьте ваши контактные данные и мы свяжемся с вами при первой возможности
+        </p>
+
+        <form class="popup__form">
+            <div class="popup__field">
+                <label for="name" class="popup__label">Ваше имя</label>
+                <input type="text" id="name-input" class="popup__input" required>
+            </div>
+
+            <div class="popup__field">
+                <label for="phone" class="popup__label">Ваш телефон</label>
+                <input type="tel" id="phone" class="popup__input" required>
+            </div>
+
+            <button type="submit" class="popup__submit btn">Оставить заявку</button>
+        </form>
+    </div>
+</div>
+
+</body>
+
+</html>
